@@ -1,17 +1,16 @@
 .my-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background-color: var(--primary-color-1);
     background-image: url("../images/bg-intro-mobile.png");
     
     /* Configuración especial del fondo para mobiles */
-    background-repeat: no-repeat; 
+    background-repeat: repeat; 
     background-position: center;
     background-attachment: fixed;       
-    webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    width: 100%; 
+    background-size: contain;
     margin: 0;
 }
 
@@ -30,7 +29,8 @@
 .card-promocion{
     background-color: var(--accent-color);
     color: white;
-    font-weight: 400;
+    font-weight: initial;
+    font-size: 0.9rem;
     margin-bottom: 2em;
     border-radius: .3em;
     padding: 1em 0 1em 0;
@@ -67,6 +67,7 @@
     background-color: var(--primary-color-2);
     color: white;
     text-transform: uppercase;
+    letter-spacing: 0.1em;
     font-weight: 700;
     box-shadow: 0px 5px hsla(154, 71%, 44%, 0.9);
 }
@@ -78,6 +79,7 @@
 .terminos{
     color: var(--neutral-color-2);
     font-weight: 400;
+    font-size: 0.9rem;
     align-items: stretch;
     align-content: stretch;
 }
