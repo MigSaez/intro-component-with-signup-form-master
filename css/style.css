@@ -1,0 +1,109 @@
+.my-body{
+    background-color: var(--primary-color-1);
+    background-image: url("../images/bg-intro-mobile.png");
+    
+    /* Configuración especial del fondo para mobiles */
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed;       
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    width: 100%; 
+    margin: 0;
+}
+
+.container{
+    min-width: var(--min-width);
+    max-width: var(--max-width);
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+}
+
+.cabecera{
+    color: white;
+}
+
+.card-promocion{
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: 400;
+    margin-bottom: 2em;
+    border-radius: .3em;
+    padding: 1em 0 1em 0;
+    box-shadow: 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-formulario{
+    background-color: white;
+    padding: 1.5em;
+    align-content: center;
+    align-items: center;
+    border-radius: .3em;
+    box-shadow: 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario>.formtext{
+    display: block;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-style: solid;
+    border-width: .1em;
+    border-radius: .3em;
+    width: 100%;
+}
+
+.formulario>.formbutton{
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-style: solid;
+    border-width: 0;
+    border-radius: .3em;
+    background-color: var(--primary-color-2);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: 0px 5px hsla(154, 71%, 44%, 0.9);
+}
+
+.formtext{
+    border-color: var(--neutral-color-2);
+}
+
+.terminos{
+    color: var(--neutral-color-2);
+    font-weight: 400;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.termservices{
+    color: var(--primary-color-1);
+    font-weight: 500;
+}
+
+@media (min-width: 600px) {
+    .body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-size: clamp(1.2em,2vw,1.5em);
+    }
+
+    .container{
+        display: flex; 
+        max-width: var(--max-width);
+      }
+
+    .cabecera{
+        text-align: left;
+    }
+  
+  }
+
